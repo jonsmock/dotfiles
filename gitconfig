@@ -1,0 +1,17 @@
+[user]
+  name = Jon Smock
+  email = jonsmock@gmail.com
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  di = diff
+  dc = diff --cached
+  aa = add --all
+  br = branch
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[format]
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
