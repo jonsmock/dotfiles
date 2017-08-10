@@ -3,13 +3,13 @@ if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
 
-# MySQL
-export MYSQL_PS1="\u, \d> "
-export ARCHFLAGS="-arch x86_64"
-export MYSQL_HOME=/usr/local/mysql
-
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=$MYSQL_HOME/bin:$PATH
-
 export PS1="\w$ "
 export EDITOR="vim"
+
+# set PATH so it includes user's (public|private) bin if it exists
+if [ -d ~/bin ] ; then
+    PATH="~/bin:$PATH"
+fi
+if [ -d ~/bin.pub ] ; then
+    PATH="~/bin.pub:$PATH"
+fi
