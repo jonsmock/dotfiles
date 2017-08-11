@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # TODO:
-# - Why do bin.pub and vim create recursively symlinks?
 # - Instead of blindly git-pull'ing, lock to a specific SHA
 
 set -ex
