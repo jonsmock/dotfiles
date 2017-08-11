@@ -1,5 +1,5 @@
 bin.pub/bin.pub
 bin.pub/selecta
 bin-utils
-vim/bundle/vim-clojure-static
-vim/bundle/vim-fireplace
+.vim/bundle/vim-clojure-static
+.vim/bundle/vim-fireplace

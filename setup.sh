@@ -8,8 +8,8 @@ set -ex
 
 repo=$(pwd)
 
-ln -vsf $repo/bin.pub ~/bin.pub
-ln -vsf $repo/vim/ ~/.vim/
+cd ~/ && ln -vsf $repo/bin.pub
+cd ~/ && ln -vsf $repo/.vim/
 
 ln -vsf $repo/profile ~/.profile
 ln -vsf $repo/gitconfig ~/.gitconfig
@@ -32,14 +32,14 @@ ln -vsf $repo/bin-utils/selecta/selecta $repo/bin.pub/selecta
 
 # VIM Bundles
 
-mkdir -p $repo/vim/bundle
+mkdir -p $repo/.vim/bundle
 
-if [[ ! -d $repo/vim/bundle/vim-fireplace ]]; then
-	cd $repo/vim/bundle && git clone https://github.com/tpope/vim-fireplace
+if [[ ! -d $repo/.vim/bundle/vim-fireplace ]]; then
+	cd $repo/.vim/bundle && git clone https://github.com/tpope/vim-fireplace
 fi
-git -C $repo/vim/bundle/vim-fireplace pull
+git -C $repo/.vim/bundle/vim-fireplace pull
 
-if [[ ! -d $repo/vim/bundle/vim-clojure-static ]]; then
-	cd $repo/vim/bundle && git clone https://github.com/guns/vim-clojure-static
+if [[ ! -d $repo/.vim/bundle/vim-clojure-static ]]; then
+	cd $repo/.vim/bundle && git clone https://github.com/guns/vim-clojure-static
 fi
-git -C $repo/vim/bundle/vim-clojure-static pull
+git -C $repo/.vim/bundle/vim-clojure-static pull
