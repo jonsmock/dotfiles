@@ -9,6 +9,7 @@ repo=$(pwd)
 
 cd ~/ && ln -vsf $repo/bin.pub
 cd ~/ && ln -vsf $repo/.vim/
+cd $repo
 
 ln -vsf $repo/profile ~/.profile
 ln -vsf $repo/gitconfig ~/.gitconfig
